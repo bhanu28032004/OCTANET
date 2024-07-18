@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Acme;
+}
+.smsizes{
+    height: 30px;
+    width: 30px;
+}
+.size{
+    height: 250px;
+    width: 250px;
+}
+header nav{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    width: auto;
+    background:linear-gradient(to right,#ea526f,#e76b74,#d7af70,#585b56);
+}
+header nav .logo{
+    height: 5vh;
+    margin: 1rem;
+    line-height: 2rem;
+    font-size: xx-large;
+    font-weight: 700;
+    color: white;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li{
+    padding: 0.4rem;
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+main .hero{
+    height: 50vh;
+    background: url("./images/whitecakes.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    text-align: center;
+    color: #ea526f;
+}
+.hero h1{
+    padding-top:5rem;
+    font-size: xx-large;
+    font-weight: 900;
+}
+.hero p{
+    padding-top:1rem;
+    font-size: large;
+    font-weight: 600;
+}
+.hero .cta{
+    margin-top: 0.5rem;
+    padding:0.5rem;
+    width: 10rem;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 2vh 0;
+    background:linear-gradient(to right,#e76b74,#d7af70,#585b56);
+}
+main .about{
+    background-color: #ea526f;
+    color: #d7af70;
+    text-align: center;
+}
+main .about h2{
+    font-size: x-large;
+    font-weight: 900;
+    margin: 0.3rem;
+}
+main .about p{
+    font-size: large;
+    font-weight: 500;
+    padding: 0.3rem;
+}
+main .menu{
+    text-align: center;
+}
+main .menu h2{
+    color:#d7af70;
+}
+.cake-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cake-item {
+    background-color: #ea526f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 20px;
+    width: 290px;
+    text-align: center;
+    border-radius: 8px;
+    border: 3px solid #585b56;
+    transition: transform 0.3s ease;
+}
+.cake-item:hover {
+    transform: translateY(-10px);
+}
+.cake-item img {
+    border-radius: 8px;
+}
+.cake-item h3 {
+    margin: 10px 0 5px;
+    color: #d7af70;
+}
+.cake-item p {
+    margin: 0;
+    color: #d7af70;
+    font-size: 18px;
+}
+.size{
+    height: 250px;
+    width: 250px;
+}
+.cake-item{
+    animation: float 5s ease-in-out infinite;
+}
+.cake-item:nth-child(1), .cake-item:nth-child(2), 
+.cake-item:nth-child(3), .cake-item:nth-child(4), 
+.cake-item:nth-child(5), .cake-item:nth-child(6), 
+.cake-item:nth-child(7), .cake-item:nth-child(8),
+.cake-item:nth-child(9), .cake-item:nth-child(10), 
+.cake-item:nth-child(11), .cake-item:nth-child(12), 
+.cake-item:nth-child(13), .cake-item:nth-child(14),
+.cake-item:nth-child(15), .cake-item:nth-child(16) {
+    animation-duration: 6s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+.contact h2{
+    text-align: center;
+    color: #ea526f;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact form input, .contact form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact form button {
+    cursor: pointer;
+    margin-top: 0.5rem;
+    padding:0.5rem;
+    width: 10rem;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 2vh 0;
+    background:linear-gradient(to right,#e76b74,#d7af70,#585b56);
+}
+footer{
+    background:linear-gradient(to right,#ea526f,#e76b74,#d7af70,#585b56);
+    color: white;
+    text-align: center;
+    height: 47vh;
+}
+footer p{
+    padding-top: 1.5rem;
+}
+footer .social img{
+    margin: 0.5rem;
+}
+footer .social p{
+    padding: 0.5rem 0 0.5rem 0;
+    color: white;
+    font-weight: 600;
+    font-size: large;
+}
+@media screen and (min-width: 700px){
+    header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav ul li{
+        padding: 0.5rem;
+        font-size: larger;
+        font-weight: 900;
+    }
+    footer{
+        height: 50vh;
+    }
+}
+@media screen and (min-width: 1200px){
+    header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav .nav-links li{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    footer .social-media{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
